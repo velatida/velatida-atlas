@@ -44,7 +44,7 @@ VALUES (
 	1,
 	15,
 	'Preocupación Menor (LC)',
-	''
+	'images/especies/amphiprion-ocellaris.jpg'
 ),
 (
 	'0000002',
@@ -62,7 +62,7 @@ VALUES (
 	1,
 	30,
 	'Casi Amenazado (NT)',
-	''
+	'images/especies/hippocampus-guttulatus.jpg'
 ),
 (
 	'0000003',
@@ -80,7 +80,7 @@ VALUES (
 	0,
 	2000,
 	'En Peligro (EN)',
-	''
+	'images/especies/rhincodon-typus.jpg'
 ),
 (
 	'0000004',
@@ -98,7 +98,7 @@ VALUES (
 	0,
 	1200,
 	'En Peligro (EN)',
-	''
+	'images/especies/mobula-birostris.jpg'
 ),
 (
 	'0000005',
@@ -116,7 +116,7 @@ VALUES (
 	0,
 	600,
 	'Preocupación Menor (LC)',
-	''
+	'images/especies/tursiops-truncatus.jpg'
 ),
 (
 	'0000006',
@@ -134,7 +134,7 @@ VALUES (
 	0,
 	200,
 	'Preocupación Menor (LC)',
-	''
+	'images/especies/megaptera-novaeangliae.jpg'
 ),
 (
 	'0000007',
@@ -152,7 +152,7 @@ VALUES (
 	0,
 	1200,
 	'Vulnerable (VU)',
-	''
+	'images/especies/dermochelys-coriacea.jpg'
 ),
 (
 	'0000008',
@@ -170,7 +170,7 @@ VALUES (
 	0,
 	60,
 	'Preocupación Menor (LC)',
-	''
+	'images/especies/carcinus-maenas.jpg'
 ),
 (
 	'0000009',
@@ -188,7 +188,7 @@ VALUES (
 	0,
 	200,
 	'Preocupación Menor (LC)',
-	''
+	'images/especies/octopus-vulgaris.jpg'
 ),
 (
 	'0000010',
@@ -206,7 +206,7 @@ VALUES (
 	0,
 	200,
 	'Preocupación Menor (LC)',
-	''
+	'images/especies/asterias-rubens.jpg'
 ),
 (
 	'0000011',
@@ -224,7 +224,7 @@ VALUES (
 	0,
 	1400,
 	'No evaluada (NE)',
-	''
+	'images/especies/pelagia-noctiluca.jpg'
 ),
 (
 	'0000012',
@@ -242,7 +242,7 @@ VALUES (
 	1,
 	30,
 	'No evaluada (NE)',
-	''
+	'images/especies/aplysina-fistularis.jpg'
 ),
 (
 	'0000013',
@@ -260,7 +260,7 @@ VALUES (
 	1,
 	50,
 	'No evaluada (NE)',
-	''
+	'images/especies/hexabranchus-sanguineus.jpg'
 ),
 (
 	'0000014',
@@ -278,7 +278,7 @@ VALUES (
 	1,
 	40,
 	'Preocupación Menor (LC)',
-	''
+	'images/especies/posidonia-oceanica.jpg'
 ),
 (
 	'0000015',
@@ -296,5 +296,5 @@ VALUES (
 	0,
 	10,
 	'No evaluada (NE)',
-	''
+	'images/especies/ulva-lactuca.jpg'
 );

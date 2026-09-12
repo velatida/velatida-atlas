@@ -27,10 +27,9 @@ SET CHARACTER SET utf8mb4;
 CREATE TABLE Usuarios (
 	id_usuario VARCHAR(20) PRIMARY KEY,
 	nombre_usuario VARCHAR(100) NOT NULL,
-	email VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL UNIQUE,
 	password VARCHAR(255) NOT NULL,
-	fecha_registro DATE NOT NULL,  
-	foto_perfil VARCHAR(255)
+	fecha_registro DATE NOT NULL  
 );
 
 -- ---------------------------------------------------------

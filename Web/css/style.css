@@ -1,0 +1,1010 @@
+/* ---------------------------------------------------------
+   ESTILOS GENERALES
+--------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+}
+
+/* ---------------------------------------------------------
+   TITULOS 
+--------------------------------------------------------- */
+
+h1 {
+    font-family: 'Garamond', serif;
+    font-size: 33px;
+}
+
+h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 21px;
+}
+
+h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+/* ---------------------------------------------------------
+   CABECERA
+--------------------------------------------------------- */
+
+header {
+    background-color: #627FB3;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------------------------------------------------------
+   MENU PRINCIPAL
+--------------------------------------------------------- */
+
+nav {
+    background-color: #0f2935;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #DDE0ED;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #F5F4ED;
+}
+
+/* ---------------------------------------------------------
+   CONTENEDOR PRINCIPAL
+--------------------------------------------------------- */
+
+.contenedor {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+/* ---------------------------------------------------------
+   CONTENIDO 
+--------------------------------------------------------- */
+
+main {
+    flex: 1;
+    background-color: #F5F4ED;
+    border: 2px solid #ffffff;
+    padding: 30px;
+}
+
+main section {
+    display: block;
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main h2 {
+    color: #163a4a;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #EBE3CA;
+    margin: 25px 0;
+}
+
+/* ---------------------------------------------------------
+   BUSCADOR DE ESPECIES
+--------------------------------------------------------- */
+
+.form-buscador {
+    display: flex;
+    width: 500px;
+    margin: 5;
+    padding: 5;
+}
+
+.buscador input {
+    flex: 1;
+    padding: 15px 15px;
+    border: 1px solid #0f2935;
+    border-radius: 10px 0 0 10px;
+    background-color: #f1f1f1;
+    color: #0f2935;
+}
+
+.buscador input::placeholder {
+    color: #0f2935;
+}
+
+.buscador button {
+    padding: 15px 15px;
+    border: 1px solid #0f2935;
+    border-radius: 0 10px 10px 0;
+    background-color: #0f2935;
+    width: 130px;
+    color: #F5F4ED;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    background-color: #627FB3;
+    color: #F5F4ED;
+}
+
+.mensaje-busqueda {
+    margin-top: 15px;
+}
+
+/* ---------------------------------------------------------
+   INICIO - ESPECIES DESTACADAS 
+--------------------------------------------------------- */
+
+.tarjetas-destacadas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-destacada {
+    flex: 1;
+}
+
+.tarjeta-destacada img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.datos-destacada {
+    text-align: center;
+}
+
+/* Botón Ver ficha */ 
+
+.boton-ver-ficha {
+    display: inline-block;
+    padding: 7px 15px;
+    border: 1px solid #EBE3CA;
+    border-radius: 15px;
+    background-color: #0f2935;
+    color: #EBE3CA;
+    text-decoration: none;
+}
+
+.boton-ver-ficha:hover {
+    background-color: #627FB3;
+}
+
+/* ---------------------------------------------------------
+   ESPECIES - LISTA DE GRUPOS
+--------------------------------------------------------- */
+
+.tarjetas-grupos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-grupo {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #EBE3CA;
+    border-radius: 15px;
+    background-color: #f4f1e8;
+}
+
+.tarjeta-grupo img {
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-grupo h3 {
+    margin: 0 0 15px;
+}
+
+/* Botón Ver especies */
+
+.tarjeta-grupo a {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 10px;
+    background-color: #0f2935;
+    color: #EBE3CA;
+    text-decoration: none;
+}
+
+.tarjeta-grupo a:hover {
+    background-color: #627FB3;
+}
+
+/* ---------------------------------------------------------
+   GRUPOS - LISTA DE ESPECIES
+--------------------------------------------------------- */
+
+.tarjetas-especies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-especie {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #EBE3CA;
+    border-radius: 15px;
+    background-color: #f4f1e8;
+}
+
+.tarjeta-especie img {
+    display: block;
+    width: 70%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 15px;
+}
+
+/* Botón Ver ficha de especie */
+
+.boton-ver-ficha-grupo {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px;
+    background-color: #0f2935;
+    color: #EBE3CA;
+    text-decoration: none;
+}
+
+.boton-ver-ficha-grupo:hover {
+    background-color: #627FB3;
+}
+
+/* ---------------------------------------------------------
+   FICHAS DE ESPECIES   
+--------------------------------------------------------- */
+
+.ficha-especie {
+    display: inblock;
+    margin: 20px 0;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px; 
+}
+
+.ficha-especie p {
+    margin: 5px 0;
+    padding: 7px;
+}
+
+.foto-ficha img {
+    display: block;
+    width: 50%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 15px;
+}
+
+/* Botón volver a Lista de grupos */
+
+.boton-volver-especies {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #0f2935;
+    border-radius:  10px 10px 10px 10px;
+    background-color: #EBE3CA;
+    width: 150px;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-volver-especies-contenedor {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.boton-volver-especies:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* ---------------------------------------------------------
+   LOGBOOK 
+--------------------------------------------------------- */
+
+/* Login */ 
+
+.boton-login {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0f2935;
+    width: 130px;
+    color: #EBE3CA;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-login:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+.enlace-registro a {
+    color: #0f2935;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlace-registro a:hover {
+    text-decoration: underline;
+}
+
+/* Registro */
+
+.boton-registro {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0f2935;
+    width: 130px;
+    color: #EBE3CA;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-registro:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* ---------------------------------------------------------
+   LOGBOOK - PERFIL PERSONAL  
+--------------------------------------------------------- */
+
+/* Botones perfil */
+
+.botones-logbook {
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* Botón nueva inmersión */
+
+.boton-nueva-inmersion {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0f2935;
+    width: 130px;
+    color: #EBE3CA;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-nueva-inmersion:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Botón cerrar sesión */
+
+.boton-cerrar-sesion {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #0f2935;
+    border-radius:  10px 10px 10px 10px;
+    background-color: #EBE3CA;
+    width: 130px;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.boton-cerrar-sesion:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Botón ver inmersion */
+
+.boton-secundario-inmersion {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0f2935;
+    width: 130px;
+    color: #EBE3CA;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-secundario-inmersion:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* ---------------------------------------------------------
+   INMERSIONES  
+--------------------------------------------------------- */
+
+/* Contenedor principal */
+ 
+.datos-inmersion {
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #EBE3CA;
+    background-color: #f4f1e8;
+}
+
+.datos-inmersion p {
+    margin: 5px 0;
+    padding: 7px;
+
+}
+
+/* Botón guardar inmersion */
+
+.boton-guardar-inmersion {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0f2935;
+    width: 160px;
+    color: #EBE3CA;
+    text-decoration: none;
+}
+
+.boton-guardar-inmersion:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Botón volver logbook */
+
+.botones-volver-perfil {
+    text-align: center;
+}
+
+.boton-volver-perfil {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #0f2935;
+    border-radius: 10px;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    width: 130px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.boton-volver-perfil:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* ---------------------------------------------------------
+  AVISTAMIENTOS
+--------------------------------------------------------- */
+
+/* Botón guardar avistamiento en Inmersión */
+
+.boton-guardar-avistamiento {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0f2935;
+    width: 170px;
+    color: #EBE3CA;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-guardar-avistamiento:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Botón volver inmersion en Inmersión */
+
+.boton-volver-inmersion {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #0f2935;
+    border-radius: 10px;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-volver-inmersion:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+.botones-inmersion {
+    text-align: center;
+}
+
+/* Contenedor principal de la tabla */
+
+.tabla-avistamiento {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+}
+
+/* Encabezado con el nombre */
+
+.nombre-avistamiento {
+    background-color: #f4f1e8;
+    border: 1px solid #EBE3CA;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 7px 7px;
+    margin: 0px;
+}
+
+.nombre-avistamiento h3 {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+/* Bloque de datos */
+
+.datos-avistamiento {
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid #EBE3CA;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.datos-avistamiento p {
+    margin: 5px 0;
+    padding-left: 5px;
+}
+
+.datos-avistamiento p::before {
+    content: "•  ";
+}
+
+/* ---------------------------------------------------------
+   EDICION DE INMERSIONES Y AVISTAMIENTOS 
+--------------------------------------------------------- */
+
+/* Botones inmersion */
+
+.botones-registro-inmersion {
+    text-align: right;
+    margin: 10px 0;
+}
+
+/* Botón editar inmersion */
+
+.boton-editar-inmersion {
+    display: inline-block;
+    padding: 7px 7px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f4f1e8;
+    width: 100px;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-editar-inmersion:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Botón eliminar inmersion */
+
+.boton-eliminar-inmersion {
+    display: inline-block;
+    padding: 7px 7px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f4f1e8;
+    width: 100px;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.boton-eliminar-inmersion:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Boton cancelar edicion */
+
+.botones-cancelar-edicion {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.boton-cancelar-edicion {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #0f2935;
+    border-radius:  10px 10px 10px 10px;
+    background-color: #EBE3CA;
+    width: 150px;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.boton-cancelar-edicion:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Botones avistamiento */
+
+.botones-edicion-avistamiento {
+    text-align: right;
+    margin: 10px 0;
+}
+
+/* Botón añadir avistamiento */
+
+.boton-anadir-avistamiento {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #0f2935;
+    border-radius:  10px 10px 10px 10px;
+    background-color: #EBE3CA;
+    width: 150px;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.boton-anadir-avistamiento:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Botón editar avistamiento */
+
+.boton-editar-avistamiento {
+    display: inline-block;
+    padding: 7px 7px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f4f1e8;
+    width: 100px;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.boton-editar-avistamiento:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Botón eliminar avistamiento */
+
+.boton-eliminar-avistamiento {
+    display: inline-block;
+    padding: 7px 7px;
+    border: 1px solid #EBE3CA;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f4f1e8;
+    width: 100px;
+    color: #0f2935;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.boton-eliminar-avistamiento:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* Boton volver al logbook */
+
+.boton-volver-logbook {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #EBE3CA;
+    border-radius:  10px 10px 10px 10px;
+    background-color: #0f2935;
+    width: 150px;
+    color: #EBE3CA;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.boton-volver-logbook:hover {
+    background-color: #627FB3;
+    border: 1px solid #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* ---------------------------------------------------------
+    AVISTAMIENTOS - RESULTADOS ESPECIES 
+--------------------------------------------------------- */
+
+.buscador-especie input[type="hidden"] {
+    display: none !important;
+}
+
+.buscador-especie {
+    position: relative !important;
+    display: inline-block !important;
+    width: 250px; 
+}
+
+.buscador-especie input[type="text"] {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+#resultados-especies {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    border: 1px solid #0f2935 !important;
+    border-top: none !important;
+    z-index: 9999 !important;
+    max-height: 180px !important;
+    overflow-y: auto !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;
+    box-sizing: border-box !important;
+}
+
+#resultados-especies div {
+    padding: 8px 10px !important;
+    cursor: pointer !important;
+    background-color: #ffffff !important;
+    color: #0f2935 !important;
+    text-align: left !important;
+}
+
+#resultados-especies div:hover {
+    background-color: #f1f1f1 !important;
+}
+
+/* ---------------------------------------------------------
+   BARRA LATERAL
+--------------------------------------------------------- */
+
+aside {
+    width: 280px;
+    background-color: #DDE0ED;
+    border: 2px solid #ffffff;
+    padding: 25px;
+}
+
+aside h2 {
+    margin-top: 0;
+    color: #163a4a;
+}
+
+aside hr {
+    border: none;
+    border-top: 1px solid #F5F4ED;
+    margin: 20px 0;
+}
+
+.sidebar-bloque li {
+    list-style: none;
+}
+
+/* ---------------------------------------------------------
+    BARRA LATERAL - BUSCADOR DE ESPECIES
+--------------------------------------------------------- */
+
+.buscador-lateral .form-buscador {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.buscador-lateral input {
+    padding: 12px 12px;
+    border: 1px solid #0f2935;
+    border-radius: 10px 0 0 10px;
+    background-color: #F5F4ED;
+    color: #0f2935;
+    min-width: 0;
+}
+
+.buscador-lateral input::placeholder {
+    color: #0f2935;
+}
+
+.buscador-lateral button {
+    padding: 12px 12px;
+    border: 1px solid #0f2935;
+    border-radius: 0 10px 10px 0;
+    background-color: #0f2935;
+    color: #F5F4ED;
+    cursor: pointer;
+}
+
+.buscador-lateral button:hover {
+    background-color: #627FB3;
+    color: #F5F4ED;
+}
+
+/* ---------------------------------------------------------
+   BARRA LATERAL - ENLACES RRSS
+--------------------------------------------------------- */
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: 0;
+    width: auto;
+}
+
+.redes-sociales img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.redes-sociales a:hover {
+    background: none;
+}
+
+.redes-sociales a:hover img {
+    transform: scale(1.1);
+}
+
+/* ---------------------------------------------------------
+   BARRA LATERAL - CONSERVACION
+--------------------------------------------------------- */
+
+.sidebar-bloque .boton-conservacion {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px solid #F5F4ED;
+    border-radius: 10px;
+    background-color: #0f2935;
+    color: #F5F4ED;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar-bloque .boton-conservacion:hover {
+    background-color: #627FB3;
+    color: #F5F4ED;
+}
+
+/* ---------------------------------------------------------
+   BARRA LATERAL - ESPECIE DESTACADA
+--------------------------------------------------------- */
+
+/* Contenedor principal de destacada */
+
+.especie-destacada {
+    border: 1px solid #0f2935;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f4f1e8;
+}
+
+.especie-destacada img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.especie-destacada h3 {
+    margin: 5px 0;
+}
+
+.especie-destacada p {
+    margin: 5px 0 15px;
+    font-style: italic;
+}
+
+/* Botón ver ficha destacada */
+
+.boton-ver-ficha-destacada {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #0f2935;
+    border-radius: 10px;
+    background-color: #0f2935;
+    color: #EBE3CA;
+    text-decoration: none;
+}
+
+.boton-ver-ficha-destacada:hover {
+    background-color: #627FB3;
+    border-color: #EBE3CA;
+    color: #EBE3CA;
+}
+
+/* ---------------------------------------------------------
+   PIE DE PAGINA
+--------------------------------------------------------- */
+
+footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
