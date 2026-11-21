@@ -4,6 +4,12 @@ Proyecto personal de portfolio sobre una base de datos relacional de especies ma
 
 -----------
 
+🌐 Web publicada: Velatida Atlas https://velatida-atlas.rf.gd/
+
+💻 Repositorio: Código fuente y documentación del proyecto.
+
+-----------
+
 # Base de datos
 
 La base de datos almacena y relaciona información sobre especies marinas, usuarios, inmersiones y avistamientos.
