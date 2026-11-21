@@ -123,7 +123,7 @@
 
                             <h3>Caballito de mar</h3>
 
-                            <a class="boton-ver-ficha" href="ficha.php?id=0000001">
+                            <a class="boton-ver-ficha" href="ficha.php?id=0000002">
                                 Ver ficha
                             </a>
 
@@ -140,7 +140,7 @@
 
                             <h3>Tiburón ballena</h3>
 
-                            <a class="boton-ver-ficha" href="ficha.php?id=0000001">
+                            <a class="boton-ver-ficha" href="ficha.php?id=0000003">
                                 Ver ficha
                             </a>
 
