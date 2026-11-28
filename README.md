@@ -10,6 +10,16 @@ Proyecto personal de portfolio sobre una base de datos relacional de especies ma
 
 -----------
 
+# Capturas del proyecto
+
+<p align="center">
+  <img src="Web/images/screenshots/inicio.png" width="32%">
+  <img src="Web/images/screenshots/especies.png" width="32%">
+  <img src="Web/images/screenshots/inmersion.png" width="32%">
+</p>
+
+-----------
+
 # Base de datos
 
 La base de datos almacena y relaciona información sobre especies marinas, usuarios, inmersiones y avistamientos.
