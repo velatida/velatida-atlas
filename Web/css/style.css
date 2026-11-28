@@ -10,7 +10,7 @@ body {
     margin: 0;
     background-color: #EBE3CA;
     color: #0f2935;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 13px;
 }
 
@@ -19,18 +19,18 @@ body {
 --------------------------------------------------------- */
 
 h1 {
-    font-family: 'Garamond', serif;
-    font-size: 33px;
+    font-family: 'Georgia' , serif;
+    font-size: 30px;
 }
 
 h2 {
-    font-family: 'Times New Roman', serif;
-    font-size: 21px;
+    font-family: 'Consolas', monospace;
+    font-size: 17px;
 }
 
 h3 {
-    font-family: 'Times New Roman', serif;
-    font-size: 17px;
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
 }
 
 /* ---------------------------------------------------------
@@ -58,16 +58,17 @@ nav {
 }
 
 nav a {
-    color: #DDE0ED;
+    color: #F5F4ED;
     text-decoration: none;
     margin: 0 20px;
-    font-size: 16px;
-    font-family: 'Georgia', serif;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', sans-serif;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #F5F4ED;
+    color: #DDE0ED;
 }
 
 /* ---------------------------------------------------------
@@ -103,7 +104,7 @@ main h1 {
 }
 
 main h2 {
-    color: #163a4a;
+    color: #0f2935;
 }
 
 hr {
@@ -126,29 +127,34 @@ hr {
 .buscador input {
     flex: 1;
     padding: 15px 15px;
-    border: 1px solid #0f2935;
+    border: 1px solid #EBE3CA;
     border-radius: 10px 0 0 10px;
     background-color: #f1f1f1;
     color: #0f2935;
+    min-width: 0;
 }
 
 .buscador input::placeholder {
+    font-size: 12px;
     color: #0f2935;
 }
 
 .buscador button {
     padding: 15px 15px;
-    border: 1px solid #0f2935;
+    border: 1px solid #EBE3CA;
     border-radius: 0 10px 10px 0;
-    background-color: #0f2935;
-    width: 130px;
-    color: #F5F4ED;
-    cursor: pointer;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .buscador button:hover {
-    background-color: #627FB3;
-    color: #F5F4ED;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 .mensaje-busqueda {
@@ -166,6 +172,10 @@ hr {
 
 .tarjeta-destacada {
     flex: 1;
+    padding: 20px;
+    border: 1px solid #EBE3CA;
+    border-radius: 15px;
+    background-color: #f4f1e8;
 }
 
 .tarjeta-destacada img {
@@ -183,15 +193,20 @@ hr {
 .boton-ver-ficha {
     display: inline-block;
     padding: 7px 15px;
-    border: 1px solid #EBE3CA;
-    border-radius: 15px;
-    background-color: #0f2935;
-    color: #EBE3CA;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.boton-ver-ficha:hover {
-    background-color: #627FB3;
+.boton-ver-ficha-destacada:hover {
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -230,14 +245,20 @@ hr {
 .tarjeta-grupo a {
     display: inline-block;
     padding: 8px 18px;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #0f2935;
-    color: #EBE3CA;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .tarjeta-grupo a:hover {
-    background-color: #627FB3;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -272,15 +293,20 @@ hr {
 .boton-ver-ficha-grupo {
     display: inline-block;
     padding: 8px 18px;
-    border: 1px solid #EBE3CA;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #0f2935;
-    color: #EBE3CA;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .boton-ver-ficha-grupo:hover {
-    background-color: #627FB3;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -313,13 +339,15 @@ hr {
 .boton-volver-especies {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #0f2935;
-    border-radius:  10px 10px 10px 10px;
-    background-color: #EBE3CA;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
     width: 150px;
+    background-color: #EBE3CA;
     color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .boton-volver-especies-contenedor {
@@ -328,9 +356,9 @@ hr {
 }
 
 .boton-volver-especies:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -342,19 +370,22 @@ hr {
 .boton-login {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #EBE3CA;
-    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
     background-color: #0f2935;
-    width: 130px;
+    width: 170px;
     color: #EBE3CA;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-login:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 .enlace-registro a {
@@ -372,19 +403,22 @@ hr {
 .boton-registro {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #EBE3CA;
-    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
     background-color: #0f2935;
-    width: 130px;
+    width: 170px;
     color: #EBE3CA;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-registro:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -403,19 +437,22 @@ hr {
 .boton-nueva-inmersion {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #EBE3CA;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #0f2935;
-    width: 130px;
-    color: #EBE3CA;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #EBE3CA;
+    width: 150px;
+    color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-nueva-inmersion:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* Botón cerrar sesión */
@@ -423,20 +460,22 @@ hr {
 .boton-cerrar-sesion {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #0f2935;
-    border-radius:  10px 10px 10px 10px;
-    background-color: #EBE3CA;
-    width: 130px;
-    color: #0f2935;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #0f2935;
+    width: 170px;
+    color: #EBE3CA;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
-    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-cerrar-sesion:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* Botón ver inmersion */
@@ -444,19 +483,23 @@ hr {
 .boton-secundario-inmersion {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #EBE3CA;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #0f2935;
-    width: 130px;
-    color: #EBE3CA;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #EBE3CA;
+    width: 150px;
+    color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
+    text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-secundario-inmersion:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -484,18 +527,22 @@ hr {
 .boton-guardar-inmersion {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #EBE3CA;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #0f2935;
-    width: 160px;
-    color: #EBE3CA;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #EBE3CA;
+    width: 170px;
+    color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-guardar-inmersion:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* Botón volver logbook */
@@ -507,19 +554,22 @@ hr {
 .boton-volver-perfil {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #0f2935;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #EBE3CA;
-    color: #0f2935;
-    width: 130px;
+    background-color: #0f2935;
+    width: 170px;
+    color: #EBE3CA;
+    font-size: 12px;
     text-decoration: none;
-    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-volver-perfil:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -531,19 +581,22 @@ hr {
 .boton-guardar-avistamiento {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #EBE3CA;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #0f2935;
-    width: 170px;
-    color: #EBE3CA;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #EBE3CA;
+    width: 200px;
+    color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-guardar-avistamiento:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* Botón volver inmersion en Inmersión */
@@ -551,18 +604,22 @@ hr {
 .boton-volver-inmersion {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #0f2935;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #EBE3CA;
-    color: #0f2935;
+    background-color: #0f2935;
+    width: 190px;
+    color: #EBE3CA;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-volver-inmersion:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 .botones-inmersion {
@@ -674,20 +731,22 @@ hr {
 .boton-cancelar-edicion {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #0f2935;
-    border-radius:  10px 10px 10px 10px;
-    background-color: #EBE3CA;
-    width: 150px;
-    color: #0f2935;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #0f2935;
+    width: 170px;
+    color: #EBE3CA;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
-    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-cancelar-edicion:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* Botones avistamiento */
@@ -702,20 +761,22 @@ hr {
 .boton-anadir-avistamiento {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #0f2935;
-    border-radius:  10px 10px 10px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
     background-color: #EBE3CA;
-    width: 150px;
+    width: 170px;
     color: #0f2935;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
-    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-anadir-avistamiento:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* Botón editar avistamiento */
@@ -765,20 +826,22 @@ hr {
 .boton-volver-logbook {
     display: inline-block;
     padding: 10px 10px;
-    border: 1px solid #EBE3CA;
-    border-radius:  10px 10px 10px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
     background-color: #0f2935;
-    width: 150px;
+    width: 170px;
     color: #EBE3CA;
+    font-size: 12px;
     text-decoration: none;
-    text-align: center;
-    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .boton-volver-logbook:hover {
-    background-color: #627FB3;
-    border: 1px solid #EBE3CA;
-    color: #EBE3CA;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -811,7 +874,7 @@ hr {
     z-index: 9999 !important;
     max-height: 180px !important;
     overflow-y: auto !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0px 4px 8px #163a4a !important;
     box-sizing: border-box !important;
 }
 
@@ -833,19 +896,25 @@ hr {
 
 aside {
     width: 280px;
-    background-color: #DDE0ED;
+    background-color: #F5F4ED;
     border: 2px solid #ffffff;
     padding: 25px;
 }
 
 aside h2 {
     margin-top: 0;
-    color: #163a4a;
+    padding: 9px;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #DDE0ED;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0f2935;
+    letter-spacing: 1px;
 }
 
 aside hr {
     border: none;
-    border-top: 1px solid #F5F4ED;
+    border-top: 1px solid #EBE3CA;
     margin: 20px 0;
 }
 
@@ -865,29 +934,34 @@ aside hr {
 
 .buscador-lateral input {
     padding: 12px 12px;
-    border: 1px solid #0f2935;
+    border: 1px solid #EBE3CA;
     border-radius: 10px 0 0 10px;
-    background-color: #F5F4ED;
+    background-color: #f1f1f1;
     color: #0f2935;
     min-width: 0;
 }
 
 .buscador-lateral input::placeholder {
+    font-size: 12px;
     color: #0f2935;
 }
 
 .buscador-lateral button {
-    padding: 12px 12px;
-    border: 1px solid #0f2935;
+    padding: 10px 10px;
+    border: 1px solid #EBE3CA;
     border-radius: 0 10px 10px 0;
-    background-color: #0f2935;
-    color: #F5F4ED;
-    cursor: pointer;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .buscador-lateral button:hover {
-    background-color: #627FB3;
-    color: #F5F4ED;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -935,17 +1009,18 @@ aside hr {
     margin: 0 auto;
     text-align: center;
     padding: 10px 10px;
-    border: 1px solid #F5F4ED;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #0f2935;
-    color: #F5F4ED;
+    background-color: #EBE3CA;
+    color: #0f2935;
     text-decoration: none;
-    text-align: center;
+    font-weight: bold;
 }
 
 .sidebar-bloque .boton-conservacion:hover {
-    background-color: #627FB3;
-    color: #F5F4ED;
+    background-color: #DDE0ED;
+    border-color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------
@@ -955,10 +1030,10 @@ aside hr {
 /* Contenedor principal de destacada */
 
 .especie-destacada {
-    border: 1px solid #0f2935;
-    border-radius: 10px;
-    padding: 15px;
     text-align: center;
+    padding: 20px;
+    border: 1px solid #EBE3CA;
+    border-radius: 15px;
     background-color: #f4f1e8;
 }
 
@@ -985,17 +1060,20 @@ aside hr {
 .boton-ver-ficha-destacada {
     display: inline-block;
     padding: 8px 15px;
-    border: 1px solid #0f2935;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #0f2935;
-    color: #EBE3CA;
+    background-color: #EBE3CA;
+    color: #0f2935;
+    font-size: 11px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .boton-ver-ficha-destacada:hover {
-    background-color: #627FB3;
+    background-color: #DDE0ED;
     border-color: #EBE3CA;
-    color: #EBE3CA;
+    color: #0f2935;
 }
 
 /* ---------------------------------------------------------

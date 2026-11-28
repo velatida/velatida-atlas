@@ -82,10 +82,6 @@
 
                 </form>
 
-                <p class="mensaje-busqueda">
-                    ¿No encuentras la especie que buscas? Es posible que todavía no esté incluida en el Atlas.
-                </p>
-
             </section>
 
             <hr>
